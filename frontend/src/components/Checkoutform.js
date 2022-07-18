@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { BiArrowBack } from "react-icons/bi";
-import { useDispatch } from "react-redux";
-
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 const Checkoutform = (props) => {
+  const history = useNavigate();
   const dispatch = useDispatch();
+  const auth = useSelector((state) => state.auth);
   return (
     <div className="checkout-container">
       <button
@@ -20,7 +22,13 @@ const Checkoutform = (props) => {
           <h3>${props.cartTotalPrice}</h3>
         </div>
         <p>Taxes ans Shipping calculated at checkout</p>
-        <button>Check out</button>
+        {auth._id ? (
+          <button className="check-btn">Check out</button>
+        ) : (
+          <button onClick={() => history("/login")} className="check-login-btn">
+            Login to check out
+          </button>
+        )}
         <Link to="/">
           <div className="back-arrow-container">
             <BiArrowBack />

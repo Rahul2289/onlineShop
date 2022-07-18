@@ -23,7 +23,7 @@ const getAllProducts = async (req, res, next) => {
 const addTheProduct = async (req, res) => {
   let product;
 
-  const { name, description, price, image } = req.body;
+  const { name, description, price, image, catogery } = req.body;
 
   try {
     product = new Product({
@@ -31,6 +31,7 @@ const addTheProduct = async (req, res) => {
       description,
       price,
       image,
+      catogery,
     });
 
     await product.save();

@@ -8,12 +8,12 @@ border-radius:5px;
 gap:0.5rem;
 width:250px;
 box-shadow: 0px 0px 5px white, 5px 10px 15px black;
-/* transform: scale(1);
+transform: scale(1);
 transition:ease 1s linear;
 &:hover{
     cursor:pointer;
     transform: scale(1.01);
-} */
+}
 h3{
 text-align:center;
 font-size:1.3rem;
@@ -22,12 +22,6 @@ font-weight:700;
 img{
 width:150px;
 height:250px;
-transform: scale(1);
-transition:ease 1s linear;
-&:hover{
-    cursor:pointer;
-    transform: scale(1.1);
-}
 }
 .info{
 display:flex;
@@ -38,6 +32,7 @@ gap:0.2rem;
 p{
 font-size:0.8rem;
 font-weight:500;
+padding:0 0.2rem;
 }
 h5{
 font-size:1.1rem;
@@ -68,7 +63,7 @@ button:hover{
     padding:0 0.5rem;
     align-items:flex-start;
     h3{
-    font-size:1rem;
+    font-size:0.8rem;
     font-weight:500;
     }
     img{

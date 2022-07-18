@@ -36,7 +36,8 @@ const HomeContainer = Styled.div`
     }
     .loading{
     text-align:center;
-    margin-top:40%;
+    margin-top:10%;
+    color:white;
     }
     .container{
     display:flex;

@@ -2,7 +2,10 @@ import React from "react";
 import { ProductWrapper } from "./../styles/ProductStyles";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../features/cartSlice";
+// import { useNavigate } from "react-router-dom";
+
 const Product = ({ products }) => {
+  // const navigate = useNavigate();
   const dispatch = useDispatch();
   const { name, image, description, price } = products;
   return (

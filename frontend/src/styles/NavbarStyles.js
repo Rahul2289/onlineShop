@@ -7,7 +7,6 @@ position:fixed;
     color:white;
     display:flex;
     align-items:center;
-    justify-content:space-between;
     padding:1.5rem;
     z-index:99;
 a{
@@ -23,10 +22,12 @@ h5{
 .cart-logo{
     position:relative;
     font-size:1.4rem;
-cursor:pointer;
+    cursor:pointer;
     display:flex;
     align-items:center;
     z-index:2;
+    margin-left:auto;
+    margin-right:1rem;
 }
 .cart-quantity{
     position:absolute;
@@ -46,4 +47,18 @@ cursor:pointer;
 span{
     font-weight:700;
 }
+button{
+    margin-left:1rem;
+    background:black;
+    outline:none;
+    border:none;
+    color:white;
+    border:1px solid white;
+    padding:0.5rem;
+    padding:0.5rem;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+
 `;

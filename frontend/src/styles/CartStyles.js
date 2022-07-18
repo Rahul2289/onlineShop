@@ -136,19 +136,31 @@ width:100%;
 max-width:100%;
 height:2rem;
 cursor:pointer;
-background-color:green;
 border:none;
 border-radius:5px;
-color:white;
 font-weight:600;
 transition: ease 1s;
 }
-.checkout-wrapper button:hover{
+.checkout-wrapper .check-btn:hover{
     background-color:black;
     color:green;
     border:1px solid green;
     transition: ease 1s;
 }
+.checkout-wrapper .check-login-btn:hover{
+    background-color:black;
+    color:yellow;
+    border:1px solid yellow;
+    transition: ease 1s;
+}
+.check-btn{
+  background-color:green;
+color:white;
+}
+.check-login-btn{
+background:yellow;
+}
+
 .inc-btn,.dec-btn{
 cursor:pointer;
 background-color:white;
@@ -168,6 +180,7 @@ font-weight:700;
     color:red;
     border:2px solid red;
 }
+
 @media (max-width:400px){
 .titles h3{
     font-size:0.8rem;
